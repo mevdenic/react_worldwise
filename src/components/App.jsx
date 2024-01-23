@@ -15,7 +15,7 @@ import { CitiesProvider } from "../context/CitiesContext";
 function App() {
     return (
         <CitiesProvider>
-            <BrowserRouter basename="/react_worldwise">
+            <BrowserRouter basename="/react_worldwise/">
                 <Routes>
                     <Route index element={<Homepage />} />
                     <Route path="product" element={<Product />} />
