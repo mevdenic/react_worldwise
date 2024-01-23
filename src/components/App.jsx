@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 import "../App.css";
 import { Product } from "../pages/Product";
 import { Homepage } from "../pages/Homepage";
@@ -15,7 +15,7 @@ import { CitiesProvider } from "../context/CitiesContext";
 function App() {
     return (
         <CitiesProvider>
-            <BrowserRouter basename="/react_worldwise">
+            <HashRouter>
                 <Routes>
                     <Route index element={<Homepage />} />
                     <Route path="product" element={<Product />} />
@@ -31,7 +31,7 @@ function App() {
                     </Route>
                     <Route path="*" element={<PageNotFound />} />
                 </Routes>
-            </BrowserRouter>
+            </HashRouter>
         </CitiesProvider>
     );
 }

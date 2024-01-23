@@ -40,7 +40,7 @@ export function Form() {
                     setCountry(data.countryName);
                     setEmoji(convertToEmoji(data.countryCode));
                     if (!data.countryCode) {
-                        throw new Error("That doesn't seem to be a city, Click somewhere else.");
+                        throw new Error("That doesn't seem to be a city. Click somewhere else.");
                     }
                 } catch (err) {
                     setGeocodingError(err.message);
