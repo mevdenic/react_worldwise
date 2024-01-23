@@ -15,7 +15,11 @@ import { CitiesProvider } from "../context/CitiesContext";
 function App() {
     return (
         <CitiesProvider>
+<<<<<<< HEAD
             <HashRouter>
+=======
+            <BrowserRouter basename="/react_worldwise/">
+>>>>>>> 4c199bcc193b73a9968f6a3a39c9fd688fc0127b
                 <Routes>
                     <Route index element={<Homepage />} />
                     <Route path="product" element={<Product />} />
