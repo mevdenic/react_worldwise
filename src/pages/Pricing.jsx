@@ -15,7 +15,7 @@ export function Pricing() {
                         mollitia iusto. Recusandae quos provident, laboriosam fugit voluptatem iste.
                     </p>
                 </div>
-                <img src="../public/img-2.jpg" alt="overview of a large city with skyscrapers" />
+                <img src="./img-2.jpg" alt="overview of a large city with skyscrapers" />
             </section>
         </main>
     );
