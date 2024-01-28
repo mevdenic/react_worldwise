@@ -25,9 +25,9 @@ export function Login() {
 
     useEffect(
         function () {
-            dispatch({ type: "reset" });
+            if (!isAuthenticated) dispatch({ type: "reset" });
         },
-        [dispatch]
+        [dispatch, isAuthenticated]
     );
 
     return (
