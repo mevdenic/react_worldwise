@@ -2,11 +2,11 @@
     background-color: var(--color-dark--2);
     border-radius: 7px;
     padding: 2rem 3rem;
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    overflow-y: auto;
+    overflow-y: visible;
 }
 
 .row {
@@ -40,7 +40,12 @@
     color: var(--color-dark--0);
 }
 
-:global(.react-datepicker) {
-    font-family: inherit;
-    font-size: 1.2rem;
+@media screen and (max-width: 481px) {
+    .flag {
+        position: absolute;
+        right: 1rem;
+        top: 2.2rem;
+        font-size: 2.5rem;
+        color: black;
+    }
 }

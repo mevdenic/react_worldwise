@@ -1,34 +1,85 @@
 .nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.nav ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 4rem;
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
 }
 
 .nav a:link,
 .nav a:visited {
-  text-decoration: none;
-  color: var(--color-light--2);
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  font-weight: 600;
+    text-decoration: none;
+    color: var(--color-light--2);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 /* CSS Modules feature */
 .nav a:global(.active) {
-  color: var(--color-brand--2);
+    color: var(--color-brand--2);
 }
 
 a.ctaLink:link,
 a.ctaLink:visited {
-  background-color: var(--color-brand--2);
-  color: var(--color-dark--0);
-  padding: 0.8rem 2rem;
-  border-radius: 7px;
+    background-color: var(--color-brand--2);
+    color: var(--color-dark--0);
+    padding: 0.8rem 2rem;
+    border-radius: 7px;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: var(--color-brand--2);
+    margin: 4px 0;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+@media screen and (max-width: 481px) {
+    .menu {
+        display: none;
+        height: 100dvh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+    }
+    .menu.open {
+        display: flex;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .bar.open:nth-child(1) {
+        transform: rotate(35deg) translate(-3px, 6px);
+    }
+
+    .bar.open:nth-child(2) {
+        opacity: 0;
+    }
+
+    .bar.open:nth-child(3) {
+        transform: rotate(-35deg) translate(-3px, -6px);
+    }
+    .nav a:link,
+    .nav a:visited {
+        font-size: 2.5rem;
+    }
 }

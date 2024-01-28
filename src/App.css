@@ -66,3 +66,22 @@ input:focus {
     padding: 1rem 3rem;
     border-radius: 5px;
 }
+
+@media screen and (max-width: 481px) {
+    label {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 0.8rem 1.2rem;
+        font-family: inherit;
+        font-size: 1.3rem;
+        border: none;
+        border-radius: 5px;
+        background-color: var(--color-light--3);
+        transition: all 0.2s;
+    }
+}

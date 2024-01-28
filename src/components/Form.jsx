@@ -8,6 +8,7 @@ import { Message } from "./Message";
 import { Spinner } from "./Spinner";
 import ReactDatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import "./DatePickerStyles.css";
 import { useCities } from "../context/CitiesContext";
 
 function convertToEmoji(countryCode) {

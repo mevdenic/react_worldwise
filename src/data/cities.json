@@ -1,18 +1,6 @@
 {
   "cities": [
     {
-      "id": "e809",
-      "cityName": "Zagreb",
-      "country": "Croatia",
-      "emoji": "🇭🇷",
-      "date": "2024-01-23T18:07:12.902Z",
-      "notes": "",
-      "position": {
-        "lat": "45.79716719903771",
-        "lng": "15.908610820770265"
-      }
-    },
-    {
       "id": "6bed",
       "cityName": "Vir",
       "country": "Croatia",
@@ -25,15 +13,63 @@
       }
     },
     {
-      "id": "b8c0",
-      "cityName": "Ljubljana",
-      "country": "Slovenia",
-      "emoji": "🇸🇮",
-      "date": "2024-01-23T18:08:16.445Z",
-      "notes": "Bit boring",
+      "id": "d4de",
+      "cityName": "Paris",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2023-10-19T10:33:11.000Z",
+      "notes": "",
       "position": {
-        "lat": "46.057985244793024",
-        "lng": "14.479980468750002"
+        "lat": "48.850258199721495",
+        "lng": "2.3565673828125"
+      }
+    },
+    {
+      "id": "83b0",
+      "cityName": "Madrid",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2024-01-25T13:40:18.187Z",
+      "notes": "trip",
+      "position": {
+        "lat": "40.41140480914068",
+        "lng": "-3.6996459960937504"
+      }
+    },
+    {
+      "id": "d172",
+      "cityName": "Castello de la Plana",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2024-01-25T13:42:56.842Z",
+      "notes": "",
+      "position": {
+        "lat": "39.977120098439634",
+        "lng": "-0.016479492187500003"
+      }
+    },
+    {
+      "id": "db0c",
+      "cityName": "Frejus",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2024-01-27T17:16:05.057Z",
+      "notes": "",
+      "position": {
+        "lat": "43.43197981235683",
+        "lng": "6.746978759765626"
+      }
+    },
+    {
+      "id": "98ab",
+      "cityName": "Lisbon",
+      "country": "Portugal",
+      "emoji": "🇵🇹",
+      "date": "2023-10-04T19:00:36.000Z",
+      "notes": "Not bad not great",
+      "position": {
+        "lat": "38.72075704453079",
+        "lng": "-9.135742206126453"
       }
     }
   ]

@@ -1,6 +1,6 @@
 .cityList {
     width: 100%;
-    height: 65vh;
+    height: 65dvh;
     list-style: none;
     overflow-y: auto;
     overflow-x: hidden;

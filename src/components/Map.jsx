@@ -7,7 +7,7 @@ import { useGeolocation } from "../hooks/useGeolocation";
 import { Button } from "./Button";
 import { useUrlPosition } from "../hooks/useUrlPosition";
 
-export function Map() {
+export function Map({ setSidebarHidden, sidebarHidden }) {
     const { cities } = useCities();
     const [mapPosition, setMapPosition] = useState([40, 0]);
     const {
@@ -40,7 +40,7 @@ export function Map() {
             )}
             <MapContainer
                 center={mapPosition}
-                zoom={8}
+                zoom={10}
                 scrollWheelZoom={true}
                 className={styles.map}
             >
@@ -56,7 +56,7 @@ export function Map() {
                     </Marker>
                 ))}
                 <ChangeCenter position={mapPosition} />
-                <DetectClick />
+                <DetectClick sidebarHidden={sidebarHidden} setSidebarHidden={setSidebarHidden} />
             </MapContainer>
         </div>
     );
@@ -64,13 +64,16 @@ export function Map() {
 
 function ChangeCenter({ position }) {
     const map = useMap();
-    map.setView(position, 8);
+    map.setView(position, 10);
     return null;
 }
 
-function DetectClick() {
+function DetectClick({ sidebarHidden, setSidebarHidden }) {
     const navigate = useNavigate();
     useMapEvents({
-        click: (e) => navigate(`form?lat=${e.latlng.lat}&lng=${e.latlng.lng}`),
+        click: (e) => {
+            navigate(`form?lat=${e.latlng.lat}&lng=${e.latlng.lng}`);
+            setSidebarHidden(!sidebarHidden);
+        },
     });
 }
