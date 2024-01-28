@@ -33,7 +33,7 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 1200px) {
     .user {
         top: 1rem;
         right: 1rem;

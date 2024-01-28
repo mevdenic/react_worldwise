@@ -11,7 +11,7 @@ export function SidebarCollapser({ sidebarHidden, onSidebarHidden }) {
             }`}
             onClick={handleClick}
         >
-            {!sidebarHidden ? "<" : ">"}
+            <span className={`${!sidebarHidden ? styles.arrowRight : styles.arrowLeft}`}></span>
         </button>
     );
 }

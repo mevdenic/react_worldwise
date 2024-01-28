@@ -30,12 +30,11 @@
     margin-bottom: 2.5rem;
 }
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 769px) {
     .homepage {
         padding: 3rem 2rem;
     }
     .homepage h1 {
         font-size: 3rem;
-        line-height: 1.3;
     }
 }

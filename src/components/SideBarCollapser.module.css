@@ -2,7 +2,7 @@
     display: none;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1200px) {
     .collapserButton {
         display: block;
         position: absolute;
@@ -14,12 +14,32 @@
         width: 4rem;
         font-size: 2rem;
         transition: 0.6s ease-in-out;
+        border-radius: 50%;
+        background-color: var(--color-brand--2);
+        border: none;
     }
 
     .collapserButtonHidden {
-        display: block;
-        position: absolute;
         bottom: 1rem;
         right: 1rem;
+    }
+
+    .arrowRight {
+        margin-right: 5px;
+        border: solid var(--color-dark--1);
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 5px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+    .arrowLeft {
+        margin-left: 5px;
+        border: solid var(--color-dark--1);
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 5px;
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
     }
 }

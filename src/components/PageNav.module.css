@@ -46,7 +46,7 @@ a.ctaLink:visited {
     transition: 0.3s;
     border-radius: 10px;
 }
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 769px) {
     .menu {
         display: none;
         height: 100dvh;

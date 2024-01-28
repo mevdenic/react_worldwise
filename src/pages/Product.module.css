@@ -6,6 +6,8 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    display: grid;
+    place-content: center;
 }
 
 .product section {
@@ -36,7 +38,15 @@
     margin-top: 2rem;
 }
 
-@media screen and (max-width: 481px) {
+@media only screen and (max-width: 1026px) {
+    .product section {
+        width: 90%;
+        margin: 3rem 2rem;
+        gap: 4rem;
+    }
+}
+
+@media screen and (max-width: 769px) {
     .product {
         padding: 2.5rem;
         display: grid;
@@ -52,5 +62,15 @@
         grid-template-rows: auto auto;
         grid-template-columns: 1fr;
         gap: 1rem;
+    }
+    .product img {
+        width: 50%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 481px) {
+    .product img {
+        width: 100%;
     }
 }
