@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate, HashRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import "../App.css";
 import { Product } from "../pages/Product";
 import { Homepage } from "../pages/Homepage";
@@ -20,7 +20,7 @@ function App() {
     return (
         <CitiesProvider>
             <AuthProvider>
-                <HashRouter>
+                <BrowserRouter>
                     <Routes>
                         <Route index element={<Homepage />} />
                         <Route path="product" element={<Product />} />
@@ -43,7 +43,7 @@ function App() {
                         </Route>
                         <Route path="*" element={<PageNotFound />} />
                     </Routes>
-                </HashRouter>
+                </BrowserRouter>
             </AuthProvider>
         </CitiesProvider>
     );
